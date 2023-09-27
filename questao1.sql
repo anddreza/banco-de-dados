@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS PRODUTORAS (
+	`idprodutora` INT(30) NOT NULL AUTO_INCREMENT,
+    `nomeprodutora` VARCHAR(100) NOT NULL,
+     PRIMARY KEY (idprodutora)
+);
+
