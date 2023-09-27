@@ -1,3 +1,4 @@
+Exercicio retirado de https://wiki.sj.ifsc.edu.br/images/d/d2/Exerc%C3%ADcios_MySQL_1.pdf
 create table if not exists telecomunicacoes(
 	cpf integer not null auto_increment, 
 	nome varchar(200) not null, 
