@@ -12,7 +12,8 @@ ALTER TABLE produto
 -- foi utilizado o CHANGE aqui e não estava correto
 MODIFY COLUMN descricao_produto varchar(50);
 
-
+ALTER TABLE produto 
+ADD COLUMN peso float;
 
 select * from produto; 
 
@@ -40,3 +41,6 @@ create table if not exists itens(
 	
 	primary key(produto_codigo_produto)
 );
+select * from itens;
+ALTER TABLE itens DROP PRIMARY KEY produto_codigo_produto
+ADD PRIMARY KEY num_item;
