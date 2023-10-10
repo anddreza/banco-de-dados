@@ -65,12 +65,18 @@ ON gravadoras.id = artistas.gravadoras_id
 WHERE musicas.created < '2021-01-01 00:00:00';
 
 6) Selecionar o nome do cliente, o  nome do plano, e as músicas 
-dos clientes que locaram músicas do gênero "Gaúcha" e que tenham 
+dos clientes que tocaram músicas do gênero "Gaúcha" e que tenham 
 o plano "Full" ou "Light"
 
-
-
-
-
+SELECT clientes.login, planos.descricao , musicas.nome  
+FROM clientes 
+INNER JOIN musicas_has_clientes 
+ON musicas_has_clientes.clientes_id = clientes.id
+INNER JOIN musicas 
+ON musicas_has_clientes.musicas_id = musicas.id
+INNER JOIN planos
+ON clientes.planos_id = planos.id
+WHERE musicas.generos_id = 1
+AND (planos.descricao = 'Full' OR planos.descricao = 'Light');
 
 
