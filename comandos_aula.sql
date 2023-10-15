@@ -136,8 +136,10 @@ AND gravadoras.nome = 'Sony Music'
 AND musicas.duracao > '10:00:00'
 
 10) Qual o nome das músicas, o nome dos artistas, o nome do gênero e o 
-nome clientes que locaram músicas que foram gravadoras entre 01 de 
+nome clientes que tocaram músicas que foram gravadoras entre 01 de 
 Janeiro de 1993 e 31 de dezembro de 1999?
+
+select * from musicas;
 
 SELECT musicas.nome, artistas.nome, generos.descricao, clientes.login,
 gravadoras.created 
@@ -157,21 +159,26 @@ ON musicas_has_clientes.clientes_id  = clientes.id
 WHERE gravadoras.created BETWEEN DATE('1993-01-01') 
 AND DATE('1999-12-31')
 
-11) Qual o nome do gênero que teve mais músicas locadas n período de 01
+11) Qual o nome do gênero que teve mais músicas tocadas n período de 01
 de Janeiro de 2015 e 31 de Dezembro de 2020
 
-SELECT generos.descricao, generos.created 
+
+SELECT generos.descricao,
+COUNT(musicas.id)
 FROM musicas 
 INNER JOIN generos  
 ON generos.id = musicas.generos_id  
+INNER JOIN musicas_has_clientes 
+ON musicas_has_clientes.musicas_id = musicas.id
 WHERE generos.created BETWEEN DATE('2015-01-01')
 AND DATE('2020-12-31')
+GROUP BY musicas.id
 
 
 12) Qual o nome da gravadora, que possui o maior valor de contrato e 
 que não tem nenhuma música "Funk" lançada no ano de 2000?
 
-SELECT gravadoras.valor_contrato, musicas.generos_id 
+SELECT gravadoras.nome, gravadoras.valor_contrato
 FROM gravadoras 
 INNER JOIN artistas 
 ON gravadoras.id = artistas.gravadoras_id
@@ -179,9 +186,6 @@ INNER JOIN musicas_has_artistas
 ON musicas_has_artistas.artistas_id = artistas.id
 INNER JOIN musicas 
 ON musicas_has_artistas.musicas_id = musicas.id
-INNER JOIN generos 
-ON musicas.generos_id  = generos.id 
 WHERE musicas.generos_id != '4'
 AND musicas.lancamento BETWEEN DATE('2000-01-01')
-AND DATE ('2020-12-31')
-
+AND DATE ('2000-12-31');
