@@ -139,8 +139,6 @@ AND musicas.duracao > '10:00:00'
 nome clientes que tocaram músicas que foram gravadoras entre 01 de 
 Janeiro de 1993 e 31 de dezembro de 1999?
 
-select * from musicas;
-
 SELECT musicas.nome, artistas.nome, generos.descricao, clientes.login,
 gravadoras.created 
 FROM musicas 
