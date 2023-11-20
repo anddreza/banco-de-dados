@@ -1,0 +1,23 @@
+{
+	"_id": ObjectId(),
+	"nome": "Tais Morori",
+	"entrega": "Não", 
+	"produtos_comprados": [
+        {
+            "produto_1": [
+                {
+                    "nome": "TV TCL 32''",
+                    "valor": 1300.00,
+                    "Garantida Estendida": "Não",
+                    "Cumpo Desconto": "CAT10",
+                    "Valor Desconto": 130.00
+                }
+            ]
+        }
+    ],
+	"Online": "Sim",
+    "Companha Esquenta Black": "Sim",
+    "Site parceiro": "catolicasc.org.br",
+    "Obs": "Produto deve ser embalado para transporte aéreo"
+	
+}

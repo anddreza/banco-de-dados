@@ -1,0 +1,45 @@
+{
+	"_id": ObjectId(),
+	"nome": "Catarina Aguiar",
+    "data_compra": "03/11/2023",
+	"entrega": "Não", 
+	"produtos_comprados": [
+        {
+            "produto_1": [
+                {
+                    "nome": "Macbook Air M1000'",
+                    "valor": "10.500,00",
+                    "Parcelado": "Sim",
+                    "Valor Parcelas": "2.100,00",
+                    "parcelas": [
+                        {
+                            "data_vencimento": "03/11/2023",
+                            "status": "paga"
+                        },
+                        {
+                            "data_vencimento": "03/12/2023",
+                            "status": "a vencer"
+                        },
+                        {
+                            "data_vencimento": "03/01/2024",
+                            "status": "a vencer"
+                        },
+                        {
+                            "data_vencimento": "03/02/2024",
+                            "status": "a vencer"
+                        },
+                        {
+                            "data_vencimento": "02/02/2024",
+                            "status": "a vencer"
+                        },
+                        {
+                            "data_vencimento": "03/03/2024",
+                            "status": "a vencer"
+                        }
+                    ]
+                }    
+            ]
+        }
+    ],
+    "Online": "Sim"
+}

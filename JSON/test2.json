@@ -1,0 +1,29 @@
+{
+	"_id": ObjectId(),
+	"nome": "Maria Rita Antunes",
+	"entrega": "Sim", 
+	"End de Entrega": "R. Pio XII, 170",
+	"Cidade": "Porto Alegre", 
+	"UF": "RS",
+	"Data_entrega": "15/10/2023",
+	"produtos_comprados": [
+        {
+            "produto_1": [
+                {
+                    "nome": "Motorola G57 128GB Preto",
+                    "valor": 1980,
+                    "Garantida Estendida": "Não"
+                }
+            ],
+            "produto_2": [
+                {
+                    "nome": "Fone de Ouvido Alker Q20",
+                    "valor": 390,
+                    "Garantida Estendida": "Não"
+                }
+            ]
+        }
+    ],
+	"Online": "Sim"
+	
+}

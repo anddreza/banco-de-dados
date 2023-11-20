@@ -1,0 +1,29 @@
+{
+    "_id": ObjectId(),
+    "nome": "Jose Antonio Oliveira",
+    "data_compra": "01/10/2023",
+    "entrega": "Não",
+    "produtos_comprados": [
+        {
+            "produto_1": [
+                {
+                    "nome": "Tablet Samsung 17''",
+                    "valor": 3579,
+                    "Garantida Estendida": "Não"
+                }
+            ],
+            "produto_2": [
+                {
+                    "nome": "Videogame Sony Ps5",
+                    "valor": 3.44,
+                    "Garantida Estendida": "Sim",
+                    "Venc. Gar. Estendida": "01/06/2025",
+                    "Valor Gar Estendida": 2.5
+                }
+            ]
+        }
+    ],
+    "vendedor": "Carlos Pedroso",
+    "comissao": "10%",
+    "online": "Não"
+}
