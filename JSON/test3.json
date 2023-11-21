@@ -1,6 +1,7 @@
 {
 	"_id": ObjectId(),
 	"nome": "Tais Morori",
+    "data_compra": "10/10/2023",
 	"entrega": "Não", 
 	"produtos_comprados": [
         {

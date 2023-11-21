@@ -1,0 +1,40 @@
+{
+    "_id": ObjectId(),
+    "nome": "John Smith",
+    "data_compra": "01/10/2023",
+    "entrega": "Não",
+    "Retira Loja": "Sim",
+    "Cod Loja Retirada": "BTO10A",
+    "produtos_comprados": [
+        {
+            "produto_1": [
+                {
+                    "nome": "Monitor Samsung 29''",
+                    "valor": "8.300,00",
+                    "Garantida Estendida": "Sim",
+                    "Valor Gar Estendida": "2.000,00",
+                    "Venc. Gar. Estendida": "11/10/2024",
+                    "Cupom Desc": "Mar 15",
+                    "Valor desconto": "1.230,00"
+                }
+            ],
+            "produto_2": [
+                {
+                    "nome": "Multificional TIP3150",
+                    "valor": "1.200,00",
+                    "Garantida Estendida": "Não"
+                }
+            ],
+            "produto_3": [
+                {
+                    "nome": "Teclado Mecanico HPCT100",
+                    "valor": "300,00",
+                    "Garantida Estendida": "Não"
+                }
+            ]
+        }
+    ],
+    "Vendedor": "Abigail Silveira",
+    "comissao": "10%",
+    "Online": "Não"
+}

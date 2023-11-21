@@ -1,6 +1,7 @@
 {
 	"_id": ObjectId(),
 	"nome": "Maria Rita Antunes",
+    "data_compra": "01/10/2023",
 	"entrega": "Sim", 
 	"End de Entrega": "R. Pio XII, 170",
 	"Cidade": "Porto Alegre", 

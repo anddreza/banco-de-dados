@@ -52,6 +52,6 @@
         }
     ],
 	"Vendedor": "Carlos Pedroso",
-    "Comissão": "10%",
+    "comissao": "10%",
     "Online": "Não"
 }
